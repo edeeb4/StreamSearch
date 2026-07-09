@@ -1,6 +1,17 @@
+# Environment variables
 .env
+backend/.env
+
+# Python
 __pycache__/
 *.pyc
 venv/
 .venv/
+
+# Database
+*.db
 streamsage.db
+backend/streamsage.db
+
+# IDE
+.idea/
