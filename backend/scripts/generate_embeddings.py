@@ -18,9 +18,6 @@ def generate_embeddings():
     updated_count = 0
 
     for movie in movies:
-        if movie.embedding:
-            print(f"Skipping existing embedding: {movie.title}")
-            continue
 
         movie_text = create_movie_text(movie)
         embedding = create_embedding(movie_text)
