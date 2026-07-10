@@ -1,0 +1,273 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #0f1012;
+  color: #f2eee8;
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+.app {
+  min-height: 100vh;
+  padding: 64px 32px;
+  background:
+    radial-gradient(circle at top, rgba(255, 255, 255, 0.035), transparent 35%),
+    linear-gradient(180deg, #141518 0%, #0f1012 100%);
+}
+
+.hero {
+  max-width: 850px;
+  margin: 0 auto 54px;
+  text-align: center;
+}
+
+.eyebrow {
+  margin: 0 0 18px;
+  color: #b85c5c;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.24em;
+}
+
+h1 {
+  margin: 0;
+  color: #f5f0e8;
+  font-size: clamp(56px, 8vw, 96px);
+  line-height: 0.95;
+  letter-spacing: -0.06em;
+}
+
+.subtitle {
+  max-width: 730px;
+  margin: 28px auto 0;
+  color: #b8b5af;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.search-panel {
+  max-width: 1000px;
+  margin: 0 auto 46px;
+  padding: 30px;
+  background: #1b1d21;
+  border: 1px solid #303238;
+  border-radius: 18px;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.4);
+}
+
+.search-panel > label {
+  text-align: center;
+}
+
+label {
+  display: grid;
+  gap: 10px;
+  color: #e8e3dc;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+}
+
+textarea,
+input {
+  width: 100%;
+  border: 1px solid #3e4149;
+  border-radius: 10px;
+  background: #101115;
+  color: #f4efe7;
+  padding: 14px 15px;
+  outline: none;
+}
+
+textarea::placeholder,
+input::placeholder {
+  color: #777b84;
+}
+
+textarea:focus,
+input:focus {
+  border-color: #b85c5c;
+  box-shadow: 0 0 0 3px rgba(184, 92, 92, 0.16);
+}
+
+textarea {
+  min-height: 115px;
+  resize: vertical;
+}
+
+.filters {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 14px;
+  margin-top: 22px;
+}
+
+button {
+  margin-top: 24px;
+  width: 100%;
+  border: 0;
+  border-radius: 10px;
+  padding: 16px 18px;
+  background: #9f3f3f;
+  color: #fff7f2;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 900;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.35);
+}
+
+button:hover {
+  background: #b14b4b;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.error {
+  color: #ffb4a8;
+  margin-top: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.results {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  gap: 24px;
+}
+
+.movie-card {
+  display: grid;
+  grid-template-columns: 165px 1fr;
+  gap: 24px;
+  padding: 20px;
+  border-radius: 16px;
+  background: #1a1b1f;
+  border: 1px solid #303238;
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.32);
+}
+
+.movie-card img,
+.poster-placeholder {
+  width: 165px;
+  height: 247px;
+  border-radius: 10px;
+  object-fit: cover;
+  background: #2a2d33;
+  border: 1px solid #383b42;
+}
+
+.poster-placeholder {
+  display: grid;
+  place-items: center;
+  color: #a9a19a;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.movie-info {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.movie-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: start;
+}
+
+.movie-header h2 {
+  margin: 0;
+  color: #f5f0e8;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 32px;
+  line-height: 1.1;
+}
+
+.movie-header span {
+  background: #2a2c31;
+  border: 1px solid #9f3f3f;
+  color: #f0b4b4;
+  padding: 8px 11px;
+  border-radius: 999px;
+  font-weight: 900;
+  white-space: nowrap;
+}
+
+.meta {
+  color: #9ea1a8;
+}
+
+.overview {
+  line-height: 1.65;
+  color: #d8d2c9;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 16px 0;
+}
+
+.tags span {
+  background: #25272d;
+  color: #ddd6cd;
+  border: 1px solid #3a3d45;
+  padding: 7px 10px;
+  border-radius: 999px;
+  font-size: 13px;
+}
+
+.tags span:last-child {
+  border-color: #9f3f3f;
+  color: #efb0b0;
+}
+
+.providers {
+  color: #c2beb7;
+}
+
+.explanation {
+  border-left: 4px solid #9f3f3f;
+  padding-left: 12px;
+  color: #d6b1ad;
+  line-height: 1.5;
+}
+
+@media (max-width: 850px) {
+  .app {
+    padding: 36px 18px;
+  }
+
+  .hero {
+    margin-bottom: 36px;
+  }
+
+  .filters {
+    grid-template-columns: 1fr;
+  }
+
+  .movie-card {
+    grid-template-columns: 1fr;
+  }
+
+  .movie-card img,
+  .poster-placeholder {
+    width: 100%;
+    height: auto;
+    max-height: 520px;
+  }
+}

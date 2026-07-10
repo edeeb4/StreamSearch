@@ -8,24 +8,24 @@ from app.models import Movie
 
 
 MOOD_KEYWORDS = {
-    "funny": ["comedy", "comic", "hilarious", "funny", "laugh"],
-    "romantic": ["romance", "romantic", "love", "relationship", "wedding"],
-    "dark": ["dark", "murder", "crime", "violent", "killer", "death"],
-    "suspenseful": ["thriller", "suspense", "mystery", "danger", "secret"],
-    "emotional": ["drama", "family", "loss", "grief", "heartbreaking"],
-    "action-packed": ["action", "fight", "battle", "war", "mission", "hero"],
-    "scary": ["horror", "haunted", "demon", "ghost", "terrifying"],
-    "lighthearted": ["comedy", "family", "adventure", "fun", "charming"],
-    "inspiring": ["inspire", "dream", "hope", "journey", "true story"],
-    "mind-bending": ["sci-fi", "science fiction", "time", "reality", "dream"],
+    "Funny": ["comedy", "comic", "hilarious", "funny", "laugh"],
+    "Romantic": ["romance", "romantic", "love", "relationship", "wedding"],
+    "Dark": ["dark", "murder", "crime", "violent", "killer", "death"],
+    "Suspenseful": ["thriller", "suspense", "mystery", "danger", "secret"],
+    "Emotional": ["drama", "family", "loss", "grief", "heartbreaking"],
+    "Action-packed": ["action", "fight", "battle", "war", "mission", "hero"],
+    "Scary": ["horror", "haunted", "demon", "ghost", "terrifying"],
+    "Lighthearted": ["comedy", "family", "adventure", "fun", "charming"],
+    "Inspiring": ["inspire", "dream", "hope", "journey", "true story"],
+    "Mind-bending": ["sci-fi", "science fiction", "time", "reality", "dream"],
 }
 
 
 ENDING_RULES = {
-    "happy": ["comedy", "romance", "family", "animation", "adventure"],
-    "sad": ["tragedy", "loss", "grief", "death"],
-    "ambiguous": ["thriller", "mystery", "psychological"],
-    "bittersweet": ["drama", "war", "history"],
+    "Happy": ["comedy", "romance", "family", "animation", "adventure"],
+    "Sad": ["tragedy", "loss", "grief", "death"],
+    "Ambiguous": ["thriller", "mystery", "psychological"],
+    "Bittersweet": ["drama", "war", "history"],
 }
 
 
