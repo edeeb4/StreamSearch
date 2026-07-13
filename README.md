@@ -7,8 +7,7 @@ Instead of only relying on keyword search, StreamSage uses semantic embeddings t
 
 ## Demo
 
-This project is currently designed to run locally due to the memory requirements of the sentence-transformer embedding model. A deployment-safe version is in progress.
-
+This project is currently designed to run locally due to the memory requirements of the sentence-transformer embedding model.
 Screenshots and setup instructions are included below.
 
 ## Project Overview 
