@@ -1,3 +1,5 @@
+#Initialize an empty production database in the required processing order.
+
 import os
 import sys
 

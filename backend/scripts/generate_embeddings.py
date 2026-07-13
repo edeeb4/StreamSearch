@@ -1,3 +1,5 @@
+#Generate and persist semantic embeddings for every movie in the database.
+
 import os
 import sys
 

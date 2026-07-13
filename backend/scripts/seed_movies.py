@@ -1,3 +1,5 @@
+#Seed the local movie database with popular titles and metadata from TMDB.
+
 import os
 import sys
 

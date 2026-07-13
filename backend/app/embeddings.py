@@ -1,3 +1,7 @@
+#Utilities for creating and serializing semantic movie embeddings
+
+#movie metadata is converted into a decriptive text block before being encoded byt he shared sentence transformer model. The resulting embedding is stored in the database as a JSON string.
+
 import json
 from sentence_transformers import SentenceTransformer
 

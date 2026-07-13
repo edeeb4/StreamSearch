@@ -1,6 +1,9 @@
+#Rule based extraction of structured filters from a natural-language prompt
+
 import re
 
-
+#each alias maps user voab to the canonical TMDB genre name.
+#multiple aliases can point to the same genre
 GENRE_KEYWORDS = {
     "action": "Action",
     "adventure": "Adventure",
@@ -27,7 +30,7 @@ GENRE_KEYWORDS = {
     "musical": "Music",
 }
 
-
+#mood aliases are normalized to labels assigned by tag_movies.py
 MOOD_KEYWORDS = {
     "funny": "funny",
     "cozy": "lighthearted",
@@ -51,7 +54,7 @@ MOOD_KEYWORDS = {
     "mind-bending": "mind-bending",
 }
 
-
+#Ending phrases map to the compact values stored on each movie record.
 ENDING_KEYWORDS = {
     "happy ending": "happy",
     "good ending": "happy",

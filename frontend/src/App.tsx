@@ -1,3 +1,10 @@
+/**
+ * Main StreamSage search experience.
+ *
+ * This component collects a natural-language preference, calls the backend
+ * recommendation API, and renders loading, error, and ranked-result states.
+ */
+
 import { useState } from "react";
 import "./App.css";
 
