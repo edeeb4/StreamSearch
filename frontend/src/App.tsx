@@ -1,6 +1,8 @@
 import { useState } from "react";
 import "./App.css";
 
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || "http://127.0.0.1:8000";
+
 type MovieRecommendation = {
   id: number;
   tmdb_id: number;
@@ -34,7 +36,7 @@ function App() {
     setMovies([]);
 
     try {
-      const response = await fetch("http://127.0.0.1:8000/api/recommend/", {
+      const response = await fetch(`${API_BASE_URL}/api/recommend/`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
